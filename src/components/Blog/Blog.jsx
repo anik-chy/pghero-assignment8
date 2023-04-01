@@ -23,7 +23,12 @@ const Blog = () => {
                 }
             </div>
             <div className='bookmarked-container'>
-                <h4>Right Section</h4>
+                <div className='spent-time'>
+                    <p>Spent time on read: <span>100</span> min</p>
+                </div>
+                <div className="book-marked-blogs">
+                    <p>Bookmarked Blogs : <span>8</span></p>
+                </div>
             </div>
             
         </div>
