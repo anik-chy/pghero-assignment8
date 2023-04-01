@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Blog.css'
+import Post from '../Post/Post';
 
 
 const Blog = () => {
@@ -14,7 +15,12 @@ const Blog = () => {
     return (
         <div className='blog-container'>
             <div className='post-container'>
-                
+                {
+                    posts.map(post => <Post
+                        key={post.id}
+                        post={post}
+                    ></Post>)
+                }
             </div>
             <div className='bookmarked-container'>
                 <h4>Right Section</h4>
