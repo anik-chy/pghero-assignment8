@@ -11,7 +11,8 @@ const Post = (props) => {
     publist_date,
     read_time,
   } = props.post;
-
+  const changeReadTimmer = props.readTimmer;
+  
   return (
     <div className="post">
       <img id="cover-image" src={cover_img} alt="" />
@@ -26,11 +27,13 @@ const Post = (props) => {
           </div>
         </div>
         <div>
-            <p id="reading-time">{read_time} min read <iframe src={icon} frameborder="0" width="20px" height="20px"></iframe></p>
+          <p id="reading-time">{read_time} min read{" "}
+          <button id="bookmarked-button" />
+          </p>
         </div>
       </div>
       <h3 id="blog-title">{blog_title}</h3>
-      <button id="mark-read">Mark as read</button>
+      <button id="mark-read" onClick={() => changeReadTimmer(read_time)}>Mark as read</button>
     </div>
   );
 };

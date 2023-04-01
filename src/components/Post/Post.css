@@ -48,6 +48,13 @@
     color: rgba(17, 17, 17, 0.6);
 }
 
+#bookmarked-button{
+    background-image: url(public/bookmark.svg);
+    background-repeat: no-repeat;
+    width: 5px;
+}
+
+
 #blog-title {
     padding-left: 20px;
     font-style: normal;

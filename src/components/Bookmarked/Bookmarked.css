@@ -1,0 +1,12 @@
+.bookmarked-post{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 5px;
+}
+.bookmarked-post p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #111111;
+}
