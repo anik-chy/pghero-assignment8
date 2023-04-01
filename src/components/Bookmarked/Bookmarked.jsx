@@ -4,7 +4,7 @@ import './Bookmarked.css'
 const Bookmarked = (props) => {
     return (
         <div className='bookmarked-post'>
-            {/* { <p>{props.title}</p>} */}
+            <p>{props.titles}</p>
         </div>
     );
 };
