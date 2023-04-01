@@ -1,6 +1,8 @@
 import React from "react";
 import "./Post.css";
-import icon from "/bookmark.svg";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Post = (props) => {
   const {
@@ -28,7 +30,8 @@ const Post = (props) => {
         </div>
         <div>
           <p id="reading-time">{read_time} min read{" "}
-          <button id="bookmarked-button" />
+          <button onClick={() => changeReadTimmer(read_time)}className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} />
+          </button>
           </p>
         </div>
       </div>
