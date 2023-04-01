@@ -12,6 +12,7 @@ const Blog = () => {
     const [readTime, setReadTime] = useState(0);
     const [bookmarkedPost, setBookmarkTitle] = useState([]);
     
+    const notify = () => toast("Post is already added!");
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/anik-chy/fake-blog-data/main/blogs.json')
@@ -30,6 +31,7 @@ const Blog = () => {
         {
             if(title === curPostTitle)
             {
+                notify();
                 return;
             }
         }
