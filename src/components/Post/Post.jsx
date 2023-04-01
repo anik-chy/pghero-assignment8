@@ -14,6 +14,7 @@ const Post = (props) => {
     read_time,
   } = props.post;
   const changeReadTimmer = props.readTimmer;
+  const changeBookmarkedList = props.bookMarker;
   
   return (
     <div className="post">
@@ -30,7 +31,7 @@ const Post = (props) => {
         </div>
         <div>
           <p id="reading-time">{read_time} min read{" "}
-          <button onClick={() => changeReadTimmer(read_time)}className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} />
+          <button onClick={() => changeBookmarkedList(blog_title)}className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} />
           </button>
           </p>
         </div>
